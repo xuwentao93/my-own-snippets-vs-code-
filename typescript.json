@@ -4,6 +4,51 @@
 		"body": [
 			"console.log($1)"
 		],
-		"description": "console.log"
+		"description": "Log output to console"
+	},
+
+	"axios": {
+		"prefix": ".then",
+		"body": [
+			".then((res) => {",
+			"  console.log(res)",
+			"})",
+			".catch((err) => console.log('err comes from $1 api:' + err))"
+		]
+	},
+
+	// some React snippets.
+	"import React": {
+		"prefix": "imr",
+		"body": "import * as React from 'react'"
+	},
+
+	"import useState": {
+		"prefix": "useState",
+		"body": "import { useState } from 'react'"
+	},
+
+	"import useEffect": {
+		"prefix": "useEffect",
+		"body": "import { useEffect } from 'react'"
+	},
+
+	"import React-router": {
+		"prefix": "improuter",
+		"body": "import { $1 } from 'react-router-dom'"
+	},
+
+	"export class": {
+		"prefix": "reclass",
+		"body": [
+			"export default class extends React.PureComonent {",
+			"  render() {",
+			"    return (",
+			"      <div class='$1'>$1</div>",
+			"    )",
+			"  }",
+			"}"
+		]
 	}
+
 }
