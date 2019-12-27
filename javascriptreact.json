@@ -25,17 +25,17 @@
 
 	"import useState": {
 		"prefix": "useState",
-		"body": "import { useState } from 'react'"
+		"body": "import { useState } from React"
 	},
 
 	"import useEffect": {
 		"prefix": "useEffect",
-		"body": "import { useEffect } from 'react'"
+		"body": "import { useEffect } from React"
 	},
 
 	"import React-router": {
 		"prefix": "improuter",
-		"body": "import { $1 } from 'react-router-dom'"
+		"body": "import { $1 } from React-router-dom"
 	},
 
 	"export class": {

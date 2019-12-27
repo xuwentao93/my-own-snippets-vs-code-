@@ -4,6 +4,6 @@
 		"body": [
 			"console.log($1)"
 		],
-		"description": "Log output to console"
+		"description": "console.log"
 	}
 }

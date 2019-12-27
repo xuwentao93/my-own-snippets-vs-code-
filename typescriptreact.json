@@ -20,7 +20,7 @@
 	// some React snippets.
 	"import React": {
 		"prefix": "imr",
-		"body": "import React from 'react'"
+		"body": "import * as React from 'react'"
 	},
 
 	"import useState": {
