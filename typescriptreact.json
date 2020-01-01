@@ -49,6 +49,11 @@
 			"  }",
 			"}"
 		]
+	},
+
+	"useState": {
+		"prefix": "state.",
+		"body": "const [$1, set$2] = useState($3)"
 	}
 
 }

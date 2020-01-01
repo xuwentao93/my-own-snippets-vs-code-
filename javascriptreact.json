@@ -25,17 +25,17 @@
 
 	"import useState": {
 		"prefix": "useState",
-		"body": "import { useState } from React"
+		"body": "import { useState } from 'react'"
 	},
 
 	"import useEffect": {
 		"prefix": "useEffect",
-		"body": "import { useEffect } from React"
+		"body": "import { useEffect } from 'react'"
 	},
 
 	"import React-router": {
 		"prefix": "improuter",
-		"body": "import { $1 } from React-router-dom"
+		"body": "import { $1 } from 'react-router-dom'"
 	},
 
 	"export class": {
@@ -49,6 +49,22 @@
 			"  }",
 			"}"
 		]
+	},
+
+	"export function": {
+		"prefix": "exfunc",
+		"body":[
+			"export default function $1() {",
+			"  return (",
+			"    <div className=\"$2\">$2</div>",
+			"  )",
+			"}"
+		]
+	},
+
+	"useState": {
+		"prefix": "state.",
+		"body": "const [$1, set$2] = useState($3)"
 	}
 
 }
