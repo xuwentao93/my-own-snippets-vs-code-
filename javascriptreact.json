@@ -2,7 +2,7 @@
 	"Print to console": {
 		"prefix": "con",
 		"body": [
-			"console.log($1)"
+			"console.log($1);"
 		],
 		"description": "Log output to console"
 	},
@@ -20,22 +20,22 @@
 	// some React snippets.
 	"import React": {
 		"prefix": "imr",
-		"body": "import React from 'react'"
+		"body": "import React from 'react';"
 	},
 
 	"import useState": {
 		"prefix": "useState",
-		"body": "import { useState } from 'react'"
+		"body": "import { useState } from 'react';"
 	},
 
 	"import useEffect": {
 		"prefix": "useEffect",
-		"body": "import { useEffect } from 'react'"
+		"body": "import { useEffect } from 'react';"
 	},
 
 	"import React-router": {
 		"prefix": "improuter",
-		"body": "import { $1 } from 'react-router-dom'"
+		"body": "import { $1 } from 'react-router-dom';"
 	},
 
 	"export class": {
@@ -45,7 +45,7 @@
 			"  render() {",
 			"    return (",
 			"      <div class='$1'>$1</div>",
-			"    )",
+			"    );",
 			"  }",
 			"}"
 		]
@@ -57,14 +57,9 @@
 			"export default function $1() {",
 			"  return (",
 			"    <div className=\"$2\">$2</div>",
-			"  )",
+			"  );",
 			"}"
 		]
-	},
-
-	"useState": {
-		"prefix": "state.",
-		"body": "const [$1, set$2] = useState($3)"
 	}
 
 }
