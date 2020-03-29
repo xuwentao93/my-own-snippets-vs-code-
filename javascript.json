@@ -11,26 +11,15 @@
 		"prefix": ".then",
 		"body": [
 			".then((res) => {",
-			"  console.log(res)",
+			"  console.log(res);",
 			"})",
-			".catch((err) => console.log('err comes from $1 api:' + err))"
+			".catch((err) => console.log('err comes from $1 api:' + err));"
 		]
 	},
 
-	// some React snippets.
 	"import React": {
 		"prefix": "imr",
 		"body": "import React from 'react';"
-	},
-
-	"import useState": {
-		"prefix": "useState",
-		"body": "import { useState } from 'react';"
-	},
-
-	"import useEffect": {
-		"prefix": "useEffect",
-		"body": "import { useEffect } from 'react';"
 	},
 
 	"import React-router": {
@@ -60,6 +49,19 @@
 			"  );",
 			"}"
 		]
-	}
+	},
 
+	"react function component template": {
+		"prefix": "retemp",
+		"body": [
+			"import React from 'react';",
+			"",
+			"export default function $1() {",
+			"  return (",
+			"    <div className=\"$2\">$2</div>",
+			"  );",
+			"}",
+			""
+		]
+	}
 }
